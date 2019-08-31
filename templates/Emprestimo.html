@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python</title>
+</head>
+<body>
+	<a href="Main.html">
+		<img src="/static/Biblioteca.jpg" alt="Pagina Home" style="width:50px;height:50px;border:0;">
+	</a>
+	<legend><h3>Livros disponiveis para emprestimo</h3></legend>
+	<table border=1>
+		<tr>
+			<td>Livro</td>
+			<td>Escritor</td>
+			<td>Editora</td>
+			<td>Codigo</td>
+		</tr>
+		<tr>
+			<td>As aventuras de Hobin hood</td>
+			<td>Pyle Howard</td>
+			<td>Abril</td>
+			<td>9135745-6</td>
+		</tr>
+		<tr>
+			<td>Harry Potter e as Reliquias da Morte</td>
+			<td>J. K. Rowling</td>
+			<td>Rocco</td>
+			<td>65432112-5</td>
+		</tr>
+	</table>
+	<br>
+	<fieldset>
+		<legend><h3>Emprestimo</h3></legend>
+		<form>
+			<input type="text" name="Nome" placeholder="Nome">
+			<input type="text" name="Email" placeholder="Email">
+			<input type="text" name="Telefone" placeholder="Telefone">
+			<br>
+			<br>
+			<input type="text" name="livro" placeholder="livro">
+			<input type="text" name="Escritor" placeholder="Escritor">
+			<input type="text" name="Codigo" placeholder="Codigo">
+			<input type="button" name="Salvar" value="Salvar" onclick="location.href='Sucesso.html'">
+			<input type="button" name="Voltar" value="Voltar" onclick="location.href='Main.html'">
+		</form>
+	</fieldset>
+	<br>
+	<input type="button" name="ListaEmprestimos" value="Lista de Emprestimos" onclick="location.href='ListaEmprestimos.html'">
+	<br>
+	<br>
+	<br>
+	<a href="Main.html" title="Pagina Home">Pagina Home</a> 
+</body>
+</html>

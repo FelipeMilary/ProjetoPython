@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python</title>
+</head>
+<body>
+	<a href="Main.html">
+		<img src="/static/Biblioteca.jpg" alt="Pagina Home" style="width:50px;height:50px;border:0;">
+	</a>
+	<legend><h3>Lista de Clientes</h3></legend>
+	<table border=1>
+		{% for cliente in lista: %}
+			<tr>
+				<td>{{ cliente.tipo }}</td>
+				<td>{{ cliente.nome }}</td>
+			</tr>
+		{% endfor %}
+	</table>
+	<br>
+	<br>
+	<fieldset>
+		<legend><h3>Cadastro Cliente</h3></legend>
+		<form action="/AdicionarCliente" method=post>
+			<input type="text" name="Nome" placeholder="Nome">
+			<input type="text" name="Email" placeholder="Email">
+			<input type="text" name="Telefone" placeholder="Telefone">
+			<tr>
+				<td>
+					<label for="Tipo">Tipo:</label>
+				</td>
+				<td align="left">
+					<select name="Tipo"> 
+						<option value="Aluno">Aluno</option> 
+						<option value="Professor">Professor</option> 
+					</select>
+				</td>
+			</tr>
+			<input type=submit value=Incluir>
+			<input type="button" name="Voltar" value="Voltar" onclick="location.href='Main.html'">
+		</form>
+	</fieldset>
+	<br>
+	<br>
+	<br>
+	<a href="Main.html" title="Pagina Home">Pagina Home</a> 
+</body>
+</html>
